@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- font api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/f425baa892.js" crossorigin="anonymous"></script>
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="styles.css" />
+  
+  </head>
+  <body>
+    <button type="button" class="icon-button" onclick="darkMode()"> 
+      <i class="fa fa-solid fa-circle-half-stroke"></i>
+    </button>
+    <div class="calculator-grid">
+      <div class="previous-operand">11</div>
+      <div class="current-operand">444</div>
+      <button  data-clear class="span-two operator clear" type="reset">C</button>
+      <button data-delete class="operator delete">DEL</button>
+      <button class="operator btns">/</button>
+      <button data-number class="btns">7</button>
+      <button data-number class="btns">8</button>
+      <button data-number class="btns">9</button>
+      <button class="operator btns">*</button>
+      <button data-number class="btns">4</button>
+      <button data-number class="btns">5</button>
+      <button data-number class="btns">6</button>
+      <button class="operator btns">-</button>
+      <button data-number class="btns">1</button>
+      <button data-number class="btns">2</button>
+      <button data-number class="btns">3</button>
+      <button class="operator btns">+</button>
+      <button data-number class="btns">0</button>
+      <button data-number class="btns">.</button>
+      <button data-equals id="equals" class="operator span-two equals">=</button>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
